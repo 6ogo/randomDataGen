@@ -23,7 +23,7 @@ start_date = datetime(2000, 1, 1)
 end_date = datetime(2025, 1, 1)
 
 # Generate data for 100,000 rows
-for i in range(100000):
+for i in range(500000):
     sCustomerNaturalKey = i + 1
     age = random.randint(18, 99)
     apartment = random.randint(0, 1)
