@@ -44,6 +44,15 @@ for i in range(100000):
     mLastStart_Pension = churn_date(mFirst_Pension, 0.10)
     mLastStart_Personbil = churn_date(mFirst_Personbil, 0.40)
     
+    # Add noise to the dates to make them less linear
+    noise_days = random.randint(-365, 365)
+    mFirst_BankKonto += timedelta(days=noise_days)
+    mFirst_BankKort += timedelta(days=noise_days)
+    mFirst_BankBolån += timedelta(days=noise_days)
+    mFirst_BoKvar += timedelta(days=noise_days)
+    mFirst_Pension += timedelta(days=noise_days)
+    mFirst_Personbil += timedelta(days=noise_days)
+    
     # Add data to the list
     data.append([
         sCustomerNaturalKey,
