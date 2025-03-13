@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Python script generates a CSV file containing synthetic customer data. The data includes various agreements and demographic information for 100,000 customers. The script ensures that the generated data is realistic and consistent with specified rules and constraints.
+This Python script generates a CSV file containing synthetic customer data. The data includes various agreements and demographic information for 500,000 customers. The script ensures that the generated data is consistent with specified rules and constraints.
 
 ## Generated Columns
 
